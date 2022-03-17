@@ -13,6 +13,8 @@ function preload() {
   img3 = loadImage('heart.png');
   img4 = loadImage('grass.png');
   img5 = loadImage('sun.png');
+  img6 = loadImage('tree.png');
+  img7 = loadImage('cloud.png');
   
 }
 
@@ -65,11 +67,8 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
    fill(screenbg);
    rect(mouseX, mouseY, 60, 40);
   
-//Fall Colored Circles
-  } else if (key == '5') { // this tool calls a function
-  noStroke();
-    fill(random(255), random(230), random(0));
-    ellipse(mouseX, mouseY, pmouseX, pmouseY);
+  } else if (toolChoice == '5') { //places the cloud
+    image(img7, mouseX, mouseY);
    
    
   } else if (toolChoice == '6') { // places the sun
@@ -92,6 +91,8 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   } else if (toolChoice == '0') { //places the grass
     image(img4, mouseX, mouseY);
     
+ } else if (toolChoice == '-') { //places the tree
+    image(img6, mouseX, mouseY);
     
   }
  }

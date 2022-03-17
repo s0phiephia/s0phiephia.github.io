@@ -15,7 +15,7 @@ function preload() {
 }
 
 function setup() {
-createCanvas(600, 600);  // canvas size
+createCanvas(900, 600);  // canvas size
 background(screenbg);   // use our background screen color
 
 }

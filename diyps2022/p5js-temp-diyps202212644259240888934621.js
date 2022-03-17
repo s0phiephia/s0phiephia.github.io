@@ -41,6 +41,7 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
  if (toolChoice == '1' ) {  // first tool
    
     stroke(01);
+    strokeWeight(1);
     line(mouseX, mouseY, pmouseX, pmouseY);
     
 //Thick Line

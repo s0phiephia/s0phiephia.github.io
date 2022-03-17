@@ -12,6 +12,8 @@ function preload() {
   img2 = loadImage('dinosaur2.png');
   img3 = loadImage('heart.png');
   img4 = loadImage('grass.png');
+  img5 = loadImage('sun.png');
+  
 }
 
 function setup() {
@@ -68,11 +70,9 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     fill(random(255), random(230), random(0));
     ellipse(mouseX, mouseY, pmouseX, pmouseY);
    
-//Bright Colored Circles
-  } else if (toolChoice == '6') {
-noStroke();
-    fill(random(255), random(255), random(255));
-    ellipse(mouseX, mouseY, pmouseX, pmouseY);
+   
+  } else if (toolChoice == '6') { // places the sun
+    image(img5, mouseX, mouseY);
     
 //Dinosaur Tool 1
   } else if (toolChoice == '7') { // places the dinosaur

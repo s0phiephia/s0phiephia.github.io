@@ -8,13 +8,13 @@ function preload() {
 // preload() runs once, it may make you wait
 //  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
 // you can link to an image on your github account
-  img = loadImage('dinosaur.png');
-  img2 = loadImage('dinosaur2.png');
-  img3 = loadImage('heart.png');
-  img4 = loadImage('grass.png');
-  img5 = loadImage('sun.png');
-  img6 = loadImage('tree.png');
-  img7 = loadImage('cloud.png');
+  img = loadImage('https://s0phiephia.github.io/diyps2022/dinosaur.png');
+  img2 = loadImage('https://s0phiephia.github.io/diyps2022/dinosaur2.png');
+  img3 = loadImage('https://s0phiephia.github.io/diyps2022/heart.png');
+  img4 = loadImage('https://s0phiephia.github.io/diyps2022/grass.png');
+  img5 = loadImage('https://s0phiephia.github.io/diyps2022/sun.png');
+  img6 = loadImage('https://s0phiephia.github.io/diyps2022/tree.png');
+  img7 = loadImage('https://s0phiephia.github.io/diyps2022/cloud.png');
   
 }
 

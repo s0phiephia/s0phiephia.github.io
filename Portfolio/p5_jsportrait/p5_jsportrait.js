@@ -1,38 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>S.Kim Portfolio</title>
-<!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-</head>
-
-<body>
-	
-	<div class="container-fluid">
-		<nav class="navbar navbar-expand-sm bg-light navbar-light">
- <ul class="navbar-nav">
- 	<li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
-	<li class="nav-item"><a class="nav-link" href="Glitch.html">glitch</a></li>
-	<li class="nav-item"><a class="nav-link" href="meme.html">meme</a></li>
-    	<li class="nav-item"><a class="nav-link" href="imtrying.html">p5js selfie</a></li>
-	<li class="nav-item"><a class="nav-link" href="diyps.html">diyps</a></li>
-    	<li class="nav-item"><a class="nav-link" href="netart.html">net-art</a></li>
-   	<li class="nav-item"><a class="nav-link" href="future1.html">future1</a></li>
-   	<li class="nav-item"><a class="nav-link" href="future2.html">future2</a></li>
-</ul> 
-</nav>
-
-<h1>p5.js Self Portrait</h1>
-
-<iframe src="p5_jsportrait/p5_jsportrait.js" height="600" width="600" title="p5.js self portrait"></iframe>
-
-<pre>
 function setup() {
 createCanvas(600, 600);
 }
@@ -219,13 +184,3 @@ endShape();
 
 
 }
-
-
-<p><img src="glitch1.png" width="500" height="750" class=img-fluid></p>
-<p> <a href="Glitch.html"> Glitch Art </a></p>
-<p><img src="mememashup.jpg" class=img-fluid></p>
-<p><a href="meme.html"> Meme Mashup </a></p>
-</pre>
-
-</body>
-</html>

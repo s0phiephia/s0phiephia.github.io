@@ -10,7 +10,9 @@ var img1, img2;
 
 
 function preload(){
-  img1 = loadimg(
+  img1 = loadImage('https://s0phiephia.github.io/game/triceratop.png');
+  img2 = loadImage('https://s0phiephia.github.io/game/mountains.jpg');
+}
 
 function setup() {
   createCanvas(600,600);
@@ -19,7 +21,7 @@ function setup() {
 } // end of setup
 
 function draw() {
-  background(220);
+  background(img2);
   
   levelOne();
   text(("Score: " + score), width/2, 40);
@@ -35,11 +37,11 @@ function levelOne(){
     score = score + 1;
   }
   
-  if(score > 5){
-    background(random(255));}
   
   line(ballx, bally, mouseX, mouseY);
   
-  ellipse(ballx, bally, ballSize, ballSize);
+  image(img1, ballx, bally, ballSize, ballSize);
+  
+  //ellipse(ballx, bally, ballSize, ballSize);
   
 } // end of level 1

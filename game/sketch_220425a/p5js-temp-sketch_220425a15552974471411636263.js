@@ -15,7 +15,7 @@ function preload(){
   img2 = loadImage('https://s0phiephia.github.io/game/mountains.jpg');
   img3 = loadImage('https://s0phiephia.github.io/game/desert.jpeg');
   img4 = loadImage('https://s0phiephia.github.io/game/pretty.jpg');
-  img5 = loadImage('https://s0phiephia.github.io/game/start.png');
+  img5 = loadImage('https://s0phiephia.github.io/game/start.jpg');
   
 }
 

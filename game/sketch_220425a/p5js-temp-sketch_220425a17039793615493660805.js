@@ -14,7 +14,7 @@ function preload(){
   img1 = loadImage('https://s0phiephia.github.io/game/triceratop.png');
   img2 = loadImage('https://s0phiephia.github.io/game/mountains.jpg');
   img3 = loadImage('https://s0phiephia.github.io/game/desert.jpeg');
- 
+  img4 = loadImage('https://s0phiephia.github.io/game/space.jpg');
 }
 
 function setup() {
@@ -35,6 +35,10 @@ function draw() {
   levelTwo();
   }
   
+  if(gameState == "L3"){
+  background(img4);
+  levelThree();
+  }
   
   text(("Score: " + score), width/2, 40);
   
@@ -45,8 +49,8 @@ function levelOne(){
   text("level 1", width/2, height-20);
   var distToBall = dist(ballx, bally, mouseX, mouseY);
   if(distToBall < ballSize/2){
-    ballx = random(width);
-    bally = random(height);
+    ballx = random(width - 5);
+    bally = random(height - 5);
     score = score + 1;
   }
   
@@ -64,12 +68,34 @@ function levelTwo(){
   text("level 2", width/2, height-20);
   var distToBall = dist(ballx, bally, mouseX, mouseY);
   if(distToBall < ballSize/2){
-    ballx = random(width);
-    bally = random(height);
+    ballx = random(width - 5);
+    bally = random(height - 5);
     score = score + 1;
   }
   line(ballx + 20 , bally + 20 , mouseX, mouseY);
   image(img1, ballx, bally, ballSize, ballSize);
     
-  
+    if(score>= 15){
+      gameState = "L3"
+    }
 } //end level 2
+
+function levelThree(){
+  text("level 3", width/2, height-20);
+  var distToBall = dist(ballx, bally, mouseX, mouseY);
+  if(distToBall < ballSize/2){
+    ballx = random(width - 5);
+    bally = random(height - 5);
+    score = score + 1;
+    ballSize = ballSize - 1;
+  }
+ image(img1, ballx, bally, ballSize, ballSize);
+ 
+ 
+} //end level 3
+
+function win(){
+  text("You've Won!", width/2, height-20);
+  
+ 
+}

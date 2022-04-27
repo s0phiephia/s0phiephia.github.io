@@ -6,12 +6,15 @@ var ballx = 300;
 var bally = 300;
 var ballSize = 40;
 var score = 0;
-var img1, img2;
-var gameState = "L1" ;
+var img1, img2, img3, img4;
+var gameState = "L1";
+
 
 function preload(){
   img1 = loadImage('https://s0phiephia.github.io/game/triceratop.png');
   img2 = loadImage('https://s0phiephia.github.io/game/mountains.jpg');
+  img3 = loadImage('https://s0phiephia.github.io/game/desert.jpeg');
+ 
 }
 
 function setup() {
@@ -28,9 +31,10 @@ function draw() {
   }
   
   if(gameState == "L2"){
-    background(125);
-    levelTwo();
+  background(img3);
+  levelTwo();
   }
+  
   
   text(("Score: " + score), width/2, 40);
   
@@ -45,6 +49,7 @@ function levelOne(){
     bally = random(height);
     score = score + 1;
   }
+  
   if(score>= 5){
     gameState = "L2";
   }
@@ -65,6 +70,6 @@ function levelTwo(){
   }
   line(ballx + 20 , bally + 20 , mouseX, mouseY);
   image(img1, ballx, bally, ballSize, ballSize);
-
+    
   
 } //end level 2

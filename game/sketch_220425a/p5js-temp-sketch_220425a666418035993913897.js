@@ -14,7 +14,7 @@ function preload(){
   img1 = loadImage('https://s0phiephia.github.io/game/triceratop.png');
   img2 = loadImage('https://s0phiephia.github.io/game/mountains.jpg');
   img3 = loadImage('https://s0phiephia.github.io/game/desert.jpeg');
-  img4 = loadImage('https://s0phiephia.github.io/game/space.jpg');
+  img4 = loadImage('https://s0phiephia.github.io/game/pretty.jpg');
 }
 
 function setup() {

@@ -66,6 +66,7 @@ function levelBegin(){
   if(score>= 1){
     gameState = "L1";
   }
+  
   image(img1, ballx, bally, ballSize, ballSize);
   line(ballx + 20 , bally + 20 , mouseX, mouseY);
   }

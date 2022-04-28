@@ -12,7 +12,7 @@ function preload(){
   img3 = loadImage('https://s0phiephia.github.io/game/desert.jpeg');
   img4 = loadImage('https://s0phiephia.github.io/game/pretty.jpg');
   img5 = loadImage('https://s0phiephia.github.io/game/starts.png');
-  img6 = loadImage('https://s0phiephia.github.io/game/end.png'); 
+  img6 = loadImage('https://s0phiephia.github.io/game/end.jpg'); 
 }
 
 function setup() {
@@ -121,7 +121,6 @@ function levelThree(){
  }
  
 } //end level 3
-
 
 function levelWin(){
   text("Game Over", width/2, height-20);

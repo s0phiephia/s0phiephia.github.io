@@ -1,14 +1,10 @@
 
-
-
-
 var ballx = 300;
 var bally = 300;
 var ballSize = 40;
 var score = 0;
-var img1, img2, img3, img4;
+var img1, img2, img3, img4, img5, img6;
 var gameState = "begin";
-
 
 function preload(){
   img1 = loadImage('https://s0phiephia.github.io/game/triceratop.png');
@@ -16,7 +12,7 @@ function preload(){
   img3 = loadImage('https://s0phiephia.github.io/game/desert.jpeg');
   img4 = loadImage('https://s0phiephia.github.io/game/pretty.jpg');
   img5 = loadImage('https://s0phiephia.github.io/game/starts.png');
-  
+  img6 = loadImage('https://s0phiephia.github.io/game/end.png'); 
 }
 
 function setup() {
@@ -47,7 +43,10 @@ function draw() {
   levelThree();
   }
   
-  
+  if(gameState == "win"){
+  background(img6);
+  levelWin();
+  }
   
   text(("Score: " + score), width/2, 40);
   
@@ -117,5 +116,14 @@ function levelThree(){
   }
  image(img1, ballx, bally, ballSize, ballSize);
  
+ if(score>= 50){
+      gameState = "win"
+ }
  
 } //end level 3
+
+
+function levelWin(){
+  text("Game Over", width/2, height-20);
+  
+} //end win

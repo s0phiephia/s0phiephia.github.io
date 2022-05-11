@@ -36,14 +36,14 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
 //Thin Line
  if (toolChoice == '1' ) { 
    
-   stroke(1)
+   stroke(1);
     strokeWeight(1);
     line(mouseX, mouseY, pmouseX, pmouseY);
     
 //Thick Line
   } else if (toolChoice == '2') { // second tool
 
-stroke(20)
+stroke(20);
     strokeWeight(4);
     line(mouseX, mouseY, pmouseX, pmouseY);
     
@@ -57,11 +57,12 @@ stroke(20)
 //Large Eraser
   } else if (toolChoice == '4') {
 
-    stroke(0, 0, 255);
-    line(mouseX, mouseY, pmouseX, pmouseY);
+     noStroke();
+   fill(screenbg);
+   rect(mouseX, mouseY, 60, 40);
     
-
-  } else if (key == '5') { // this tool calls a function
+//Pink Dino
+  } else if (key == '5') {
     stroke(0, 0, 255);
     testbox(20, 20, 200);
     testbox(200, 20, 20);

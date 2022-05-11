@@ -1,19 +1,18 @@
+var img;
+var initials ='jm'; // your initials
+var choice = '1'; // starting choice, so it is not empty
 var screenbg = 250; // off white background
 var lastscreenshot=61; // last screenshot never taken
 
 function preload() {
 // preload() runs once, it may make you wait
-  img = loadImage('https://s0phiephia.github.io/final1/pinkdino.png');
-  img2 = loadImage('https://s0phiephia.github.io/final1/orangedino.png');
-  img3 = loadImage('https://s0phiephia.github.io/final1/yellowdino.png');
-  img4 = loadImage('https://s0phiephia.github.io/final1/greendino.png');
-  img5 = loadImage('https://s0phiephia.github.io/final1/bluedino.png');
-  img6 = loadImage('https://s0phiephia.github.io/final1/purpledino.png');
-  
+//  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
+// you can link to an image on your github account
+ 
 }
 
 function setup() {
-createCanvas(900, 600);  // canvas size
+createCanvas(600, 400);  // canvas size
 background(screenbg);   // use our background screen color
 
 }
@@ -28,67 +27,57 @@ function draw() {
   }
 }
 
- 
-
 function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   // the key mapping if statements that you can change to do anything you want.
   // just make sure each key option has the a stroke or fill and then what type of 
   // graphic function
 
-//Thin Line
  if (toolChoice == '1' ) {  // first tool
    
     stroke(01);
-    strokeWeight(1);
     line(mouseX, mouseY, pmouseX, pmouseY);
     
-//Thick Line
   } else if (toolChoice == '2') { // second tool
 
     stroke(20);
-    strokeWeight(4);
     line(mouseX, mouseY, pmouseX, pmouseY);
-    
-//Small Rectangle Eraser
   } else if (toolChoice == '3') { // third tool
 
-   noStroke();
-   fill(screenbg);
-   rect(mouseX, mouseY, 10, 5);
-    
-//Large Rectangle Eraser
+    stroke(300, 100, 0, 80);
+    line(mouseX, mouseY, pmouseX, pmouseY);
   } else if (toolChoice == '4') {
 
-   noStroke();
-   fill(screenbg);
-   rect(mouseX, mouseY, 60, 40);
-  
-  } else if (toolChoice == '5') { //places the cloud
-    image(img7, mouseX, mouseY);
-   
-   
-  } else if (toolChoice == '6') { // places the sun
-    image(img5, mouseX, mouseY);
+    stroke(0, 0, 255);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+  } else if (key == '5') { // this tool calls a function
+    stroke(0, 0, 255);
+    testbox(20, 20, 200);
+    testbox(200, 20, 20);
     
-//Dinosaur Tool 1
-  } else if (toolChoice == '7') { // places the dinosaur
+ // make testbox do something!
+ //   line(mouseX, mouseY, pmouseX, pmouseY);
+  } else if (toolChoice == '6') {
+
+    stroke(200);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+  } else if (toolChoice == '7') {
+
+    fill(100, 200, 100);
+    rect(mouseX, mouseY, 20, 20);
+  } else if (toolChoice == '8') {
+
+    fill(300, 100, 0, 80);
+    rect(mouseX, mouseY, 20, 20);
+  } else if (toolChoice == '9') {
+
+    fill(300, 100, 0, 80);
+    rect(mouseX, mouseY, 40, 40);
+  } else if (toolChoice == '0') {
+    stroke(0, 0);
+    fill(random(255), random(255), random(255), random(255));
+    rect(mouseX, mouseY, 200, 150);
+  } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
     image(img, mouseX, mouseY);
-
-//Dinosaur 2 Tool
-  }
-  else if (toolChoice == '8') { // places the dinosaur 2
-    image(img2, mouseX, mouseY);
- 
-
-  }  else if (toolChoice == '9') { //places the hearts
-    image(img3, mouseX, mouseY);
-
-
-  } else if (toolChoice == '0') { //places the grass
-    image(img4, mouseX, mouseY);
-    
- } else if (toolChoice == '-') { //places the tree
-    image(img6, mouseX, mouseY);
     
   }
  }
@@ -105,12 +94,8 @@ function testbox(r, g, b) {
 function clear_print() {
 // this will do one of two things, x clears the screen by resetting the background
 // p calls the routine saveme, which saves a copy of the screen
-
-
   if (key == 'x' || key == 'X') {
     background(screenbg); // set the screen back to the background color
-    
-    
   } else if (key == 'p' || key == 'P') {
      saveme();  // call saveme which saves an image of the screen
   }

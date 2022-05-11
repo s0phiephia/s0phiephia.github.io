@@ -8,7 +8,7 @@ function preload() {
 // preload() runs once, it may make you wait
 //  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
 // you can link to an image on your github account
-img1 = loadImage('https://s0phiephia.github.io/final/pinkdino.png');
+  //img1 = loadImage('https://s0phiephia.github.io/final/pinkdino.png');
  
 }
 
@@ -33,23 +33,34 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   // just make sure each key option has the a stroke or fill and then what type of 
   // graphic function
 
- if (toolChoice == '1' ) {  // first tool
+//Thin Line
+ if (toolChoice == '1' ) { 
    
-    stroke(01);
+   stroke(1)
+    strokeWeight(1);
     line(mouseX, mouseY, pmouseX, pmouseY);
     
+//Thick Line
   } else if (toolChoice == '2') { // second tool
 
-    stroke(20);
+stroke(20)
+    strokeWeight(4);
     line(mouseX, mouseY, pmouseX, pmouseY);
+    
+//Small Eraser
   } else if (toolChoice == '3') { // third tool
 
-    stroke(300, 100, 0, 80);
-    line(mouseX, mouseY, pmouseX, pmouseY);
+    noStroke();
+   fill(screenbg);
+   rect(mouseX, mouseY, 10, 5);
+
+//Large Eraser
   } else if (toolChoice == '4') {
 
     stroke(0, 0, 255);
     line(mouseX, mouseY, pmouseX, pmouseY);
+    
+
   } else if (key == '5') { // this tool calls a function
     stroke(0, 0, 255);
     testbox(20, 20, 200);

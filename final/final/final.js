@@ -7,8 +7,7 @@ var lastscreenshot=61; // last screenshot never taken
 function preload() {
 // preload() runs once, it may make you wait
 //  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
-// you can link to an image on your github account
-  //img1 = loadImage('https://s0phiephia.github.io/final/pinkdino.png');
+  img1 = loadImage('yellowdino.png');
  
 }
 
@@ -36,14 +35,14 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
 //Thin Line
  if (toolChoice == '1' ) { 
    
-   stroke(1)
+   stroke(1);
     strokeWeight(1);
     line(mouseX, mouseY, pmouseX, pmouseY);
     
 //Thick Line
   } else if (toolChoice == '2') { // second tool
 
-stroke(20)
+stroke(20);
     strokeWeight(4);
     line(mouseX, mouseY, pmouseX, pmouseY);
     
@@ -61,11 +60,13 @@ stroke(20)
    fill(screenbg);
    rect(mouseX, mouseY, 60, 40);
     
-
-  } else if (key == '5') { // this tool calls a function
-    stroke(0, 0, 255);
-    testbox(20, 20, 200);
-    testbox(200, 20, 20);
+    
+    
+    
+//Pink Dino
+  } else if (key == '5') {
+     image(img1, mouseX, mouseY);
+     
     
  // make testbox do something!
  //   line(mouseX, mouseY, pmouseX, pmouseY);

@@ -7,7 +7,7 @@ var lastscreenshot=61; // last screenshot never taken
 function preload() {
 // preload() runs once, it may make you wait
 //  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
-  img1 = loadImage('yellowdino.png');
+  img1 = loadImage('pinkdino.png');
  
 }
 
@@ -43,7 +43,7 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   } else if (toolChoice == '2') { // second tool
 
 stroke(20);
-    strokeWeight(4);
+    strokeWeight(10);
     line(mouseX, mouseY, pmouseX, pmouseY);
     
 //Small Eraser

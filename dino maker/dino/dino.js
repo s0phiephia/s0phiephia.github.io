@@ -7,12 +7,17 @@ var lastscreenshot=61; // last screenshot never taken
 function preload() {
 // preload() runs once, it may make you wait
 //  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
-  img1 = loadImage('pinkdino.png');
- 
+// you can link to an image on your github account
+  img = loadImage('https://s0phiephia.github.io/final/pinkdino.png');
+  img2 = loadImage('https://s0phiephia.github.io/final/orangedino.png');
+  img3 = loadImage('https://s0phiephia.github.io/final/yellowdino.png');
+  img4 = loadImage('https://s0phiephia.github.io/final/greendino.png');
+  img5 = loadImage('https://s0phiephia.github.io/final/bluedino.png');
+  img6 = loadImage('https://s0phiephia.github.io/final/purpledino.png');
 }
 
 function setup() {
-createCanvas(1300, 650);  // canvas size
+createCanvas(600, 400);  // canvas size
 background(screenbg);   // use our background screen color
 
 }
@@ -32,41 +37,27 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   // just make sure each key option has the a stroke or fill and then what type of 
   // graphic function
 
-//Thin Line
- if (toolChoice == '1' ) { 
+ if (toolChoice == '1' ) {  // first tool
    
-   stroke(1);
-    strokeWeight(1);
+    stroke(01);
     line(mouseX, mouseY, pmouseX, pmouseY);
     
-//Thick Line
   } else if (toolChoice == '2') { // second tool
 
-stroke(20);
-    strokeWeight(10);
+    stroke(20);
     line(mouseX, mouseY, pmouseX, pmouseY);
-    
-//Small Eraser
   } else if (toolChoice == '3') { // third tool
 
-    noStroke();
-   fill(screenbg);
-   rect(mouseX, mouseY, 10, 5);
-
-//Large Eraser
+    stroke(300, 100, 0, 80);
+    line(mouseX, mouseY, pmouseX, pmouseY);
   } else if (toolChoice == '4') {
 
-     noStroke();
-   fill(screenbg);
-   rect(mouseX, mouseY, 60, 40);
-    
-    
-    
-    
-//Pink Dino
-  } else if (key == '5') {
-     image(img1, mouseX, mouseY);
-     
+    stroke(0, 0, 255);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+  } else if (key == '5') { // this tool calls a function
+    stroke(0, 0, 255);
+    testbox(20, 20, 200);
+    testbox(200, 20, 20);
     
  // make testbox do something!
  //   line(mouseX, mouseY, pmouseX, pmouseY);

@@ -7,7 +7,7 @@ var lastscreenshot=61; // last screenshot never taken
 function preload() {
 // preload() runs once, it may make you wait
 //  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
-  //img1 = loadImage('pinkdino.png');
+  img1 = loadImage('pinkdino.png');
  
 }
 

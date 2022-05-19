@@ -113,6 +113,33 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     stroke(screenbg);
     line(mouseX, mouseY, pmouseX, pmouseY);
 
+//thick Blue pen
+  } else if (key == '7') { // this tool calls a function
+    
+    strokeWeight(30);
+    stroke(158, 233, 247);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+
+//Thick red pen
+ } else if (key == '8') { // this tool calls a function
+    
+    strokeWeight(30);
+    stroke(255, 4, 0);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+    
+//Thick purple pen
+ } else if (key == '9') { // this tool calls a function
+    
+    strokeWeight(30);
+    stroke(215, 159, 237);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+
+//Thick green pen
+ } else if (key == '0') { // this tool calls a function
+    
+    strokeWeight(30);
+    stroke(142, 222, 157);
+    line(mouseX, mouseY, pmouseX, pmouseY);
 
 //og Dinosaur 1 
   } else if (toolChoice == 'q' || toolChoice == 'Q') {

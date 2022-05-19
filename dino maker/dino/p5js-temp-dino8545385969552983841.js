@@ -1,5 +1,5 @@
 var img;
-var initials ='jm'; // your initials
+var initials ='sk'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 250; // off white background
 var lastscreenshot=61; // last screenshot never taken
@@ -8,7 +8,7 @@ function preload() {
 // preload() runs once, it may make you wait
 //  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
 // you can link to an image on your github account
-  img = loadImage('https://s0phiephia.github.io/dino maker/dino/bluedino.png');
+  img = loadImage('https://s0phiephia.github.io/bluedino.jp2');
 
 }
 

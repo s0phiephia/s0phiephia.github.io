@@ -47,6 +47,8 @@ function preload() {
   //volcano
   img17 = loadImage('https://s0phiephia.github.io/volcano.png');
   
+  //fire
+  img18 = loadImage('https://s0phiephia.github.io/fire.png');
 }
 
 
@@ -174,44 +176,38 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     image(img8, mouseX - 120, mouseY - 90);
 
 
+//fire
+} else if (toolChoice == 'o' || toolChoice == 'O') { 
+    image(img18, mouseX - 25, mouseY - 25, 55, 55);
 
 
 //meteor
 } else if (toolChoice == 'a' || toolChoice == 'A') { 
     image(img9, mouseX - 160, mouseY - 180, 230, 250);
-    
 //grass
 } else if (toolChoice == 's' || toolChoice == 'S') { 
     image(img10, mouseX - 68, mouseY - 68);
-    
 //tree 1
 } else if (toolChoice == 'd' || toolChoice == 'D') { 
     image(img11, mouseX - 100, mouseY - 200);
-    
 //tree 2
 } else if (toolChoice == 'f' || toolChoice == 'F') { 
     image(img15, mouseX - 90, mouseY - 140, 170, 250);
-    
 //clouds
 } else if (toolChoice == 'g' || toolChoice == 'G') { 
     image(img12, mouseX - 165, mouseY - 80);
-    
 //cloud 2
 } else if (toolChoice == 'h' || toolChoice == 'H') { 
     image(img16, mouseX - 150, mouseY - 70);
 //sun
 } else if (toolChoice == 'j' || toolChoice == 'J') { 
     image(img13, mouseX - 160, mouseY - 150, 325, 300);
-    
 //heart
 } else if (toolChoice == 'k' || toolChoice == 'K') { 
     image(img14, mouseX - 20, mouseY - 20);
-    
 //volcano
 } else if (toolChoice == 'l' || toolChoice == 'L') { 
     image(img17, mouseX - 170, mouseY - 150, 340, 300);
-
-    
 }
 
  }

@@ -1,7 +1,7 @@
 var img, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20;
 var initials ='SK'; // your initials
 var choice = '1'; // starting choice, so it is not empty
-var screenbg = 225; // off white background
+var screenbg = 220; // off white background
 var lastscreenshot=61; // last screenshot never taken
 
 function preload() {
